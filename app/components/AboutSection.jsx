@@ -19,6 +19,26 @@ const TAB_DATA = [
     ),
   },
   {
+    title: "Experience",
+    id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <h1 className="text-lg">Frontend Developer</h1>
+        <p>Champions Academy, Pune(From 4th March,2022 to 31st August,2023)</p>
+        <li>Successfully implemented a data-driven approach to optimize
+student-side dashboard and website functionalities
+</li>
+<li>Increased web traffic and content engagement by 30%
+Skilled in troubleshooting and debugging tasks, leading to improved
+overall performance by 30%
+</li>
+<li>Provided essential support to the team during the development
+phase</li>
+
+      </ul>
+    ),
+  },
+  {
     title: "Education",
     id: "education",
     content: (
@@ -76,8 +96,17 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
+                
               {" "}
               Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("experience")}
+              active={tab === "experience"}
+            >
+
+              {" "}
+              Experience{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
