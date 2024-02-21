@@ -7,7 +7,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "Project 1 description",
+    description: "My Portfolio app build with Nextjs, TailwindCSS, HeroIcons, and more.",
     image: "/images/project-0.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
@@ -25,7 +25,7 @@ const projectsData = [
   {
     id: 3,
     title: "MailBox Application",
-    description: "User can send and receive mails with user specific login. Used Redux toolkit",
+    description: "User can send and receive mails with user specific login. Used Redux toolkit.",
     image: "/images/project-5.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/shaileshsiingh/MailBox-Client",
@@ -34,7 +34,7 @@ const projectsData = [
   {
     id: 4,
     title: "Linkedin Clone Application",
-    description: "Project 4 description",
+    description: "Build this clone while learning. User can login via firebase and can Post, Like and more.",
     image: "/images/project-2.png",
     tag: ["All", "React.js"],
     gitUrl: "https://github.com/shaileshsiingh/Linkedin-Clone",
