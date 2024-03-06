@@ -12,6 +12,8 @@ const Footer = () => {
               // className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={100}
               height={100}
+              className='hover:bg-slate-800 text-white'
+
             />
         </span>
         <p className="text-slate-600">All rights reserved.</p>

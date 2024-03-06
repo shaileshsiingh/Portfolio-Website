@@ -1,11 +1,14 @@
+
+
 "use client";
-import React, { useState } from "react";
+// Import necessary modules and components
+import { useState } from 'react';
+import { Resend } from 'resend';
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import LeetcodeIcon from "../../public/leetcode-icon.png";
 import GeeksforgeeksIcon from "../../public/geeksforgeeks-icon.svg";
 import WhatsAppIcon from "../../public/whatsapp-icon.svg";
-import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
@@ -19,7 +22,7 @@ const EmailSection = () => {
       message: e.target.message.value,
     };
     const JSONdata = JSON.stringify(data);
-    const endpoint = "api/send";
+    const endpoint = "/api/send";
 
     // Form the request for sending data to the server.
     const options = {
@@ -34,18 +37,12 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
+    const resData = await response.json();
 
-if (response.ok) {
-  // Handle success (status code 200)
-  const resData = await response.json();
-  console.log("Message sent.", resData);
-  setEmailSubmitted(true);
-} else {
-  // Handle failure (status code other than 200)
-  console.error("Error sending email.");
-  // You can also check response.statusText for more details
-}
-
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true);
+    }
   };
 
   return (
@@ -65,22 +62,22 @@ if (response.ok) {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-        <a href="https://github.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-          <Image src={GithubIcon} alt="Github Icon" />
-        </a>
-        <a href="https://linkedin.com/in/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-          <Image src={LinkedinIcon} alt="Linkedin Icon" />
-        </a>
-        <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-          <Image src={LeetcodeIcon} alt="Leetcode Icon" />
-        </a>
-        <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-          <Image src={GeeksforgeeksIcon} alt="GFG Icon" />
-        </a>
-        <a href="https://wa.me/7987555461" target="_blank" rel="noopener noreferrer">
-        <Image src={WhatsAppIcon} alt="whatsapp Icon" />
-        </a>
-      </div>
+          <a href="https://github.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
+            <Image src={GithubIcon} alt="Github Icon" />
+          </a>
+          <a href="https://linkedin.com/in/shaileshsiingh" target="_blank" rel="noopener noreferrer">
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </a>
+          <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
+            <Image src={LeetcodeIcon} alt="Leetcode Icon" />
+          </a>
+          <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
+            <Image src={GeeksforgeeksIcon} alt="GFG Icon" />
+          </a>
+          <a href="https://wa.me/7987555461" target="_blank" rel="noopener noreferrer">
+            <Image src={WhatsAppIcon} alt="WhatsApp Icon" />
+          </a>
+        </div>
       </div>
       <div>
         {emailSubmitted ? (

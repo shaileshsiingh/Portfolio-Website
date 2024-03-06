@@ -9,7 +9,7 @@ import Image from "next/image";
 const navLinks = [
   {
     title: "About",
-    path: "#about",
+    path: "#About",
   },
   {
     title: "Projects",
@@ -31,7 +31,10 @@ const Navbar = () => {
               <Image
                 src="/images/logo.png.png"
                 alt="Logo"
-                style={{ height: '6rem' }}
+                style={{ height: '2.5rem' }}
+                width={40}
+                height={50}
+                className='hover:bg-slate-800 text-white'
             />
         </Link>
         <div className="mobile-menu block md:hidden">
