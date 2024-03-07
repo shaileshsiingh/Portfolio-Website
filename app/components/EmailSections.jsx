@@ -21,9 +21,10 @@ const EmailSection = () => {
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-  
+  console.log(data)
     const endpoint = "/api/send";
-  
+    console.log(endpoint)
+
     try {
       const response = await fetch(endpoint, {
         method: "POST",
@@ -38,6 +39,8 @@ const EmailSection = () => {
       }
   
       const resData = await response.json();
+      console.log(resData)
+
   
       if (response.status === 200) {
         console.log("Message sent.");
