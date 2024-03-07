@@ -10,7 +10,7 @@ const projectsData = [
     title: "React Portfolio Website",
     description: "My Portfolio app build with Nextjs, TailwindCSS, HeroIcons, and more.",
     image: "/images/project-0.png",
-    tag: ["All", "React.js"],
+    tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
     previewUrl: "/",
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: " Movie/IMDB Clone Website",
     description: "Created this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools.",
     image: "/images/project-1.png",
-    tag: ["All", "React.js"],
+    tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/IMDB-clone",
     previewUrl: "https://singular-mandazi-5c06b9.netlify.app/",
   },
@@ -28,7 +28,7 @@ const projectsData = [
     title: "MailBox Application",
     description: "User can send and receive mails with user specific login. Used Redux toolkit.",
     image: "/images/project-5.png",
-    tag: ["All", "React.js"],
+    tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/MailBox-Client",
     previewUrl: "https://65cfb25c3b44ab11817969df--rad-horse-c57be9.netlify.app/",
   },
@@ -37,7 +37,7 @@ const projectsData = [
     title: "Linkedin Clone Application",
     description: "Build this clone while learning. User can login via firebase and can Post, Like and more.",
     image: "/images/project-2.png",
-    tag: ["All", "React.js"],
+    tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Linkedin-Clone",
     previewUrl: "https://linkedin-clone-a9087.web.app",
   },
@@ -46,7 +46,7 @@ const projectsData = [
     title: "Apple Webpage Clone",
     description: "Developed Apple Clone which is responsive for all the devices as a frontend challange.",
     image: "/images/project-3.png",
-    tag: ["All", "React.js"],
+    tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/-totalitycorp-frontend-challenge-",
     previewUrl: "https://glittering-eclair-aad20d.netlify.app/",
   },
@@ -92,13 +92,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="React.Js"
+          isSelected={tag === "React.Js"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Vanilla JS"
+          isSelected={tag === "Vanilla JS"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
