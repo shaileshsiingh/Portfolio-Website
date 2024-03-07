@@ -19,10 +19,14 @@ const achievementsList = [
     prefix: "~",
     metric: "Users",
     value: "100+",
+    postfix: "+",
+
   },
   {
     metric: "Certificates",
     value: "7+",
+    postfix: "+",
+
   },
   {
     metric: "Years",
