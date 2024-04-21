@@ -59,6 +59,33 @@ const projectsData = [
     gitUrl: "https://github.com/shaileshsiingh/Full-fledged-Trading-Website",
     previewUrl: "transcendent-beignet-fd7293.netlify.app",
   },
+  {
+    id: 7,
+    title: "Step Form Application",
+    description: "Used Reactjs and TailwindCSS to build this smooth Step Form which is Responsive.",
+    image: "/images/project-6.jpg",
+    tag: ["All", "React.Js"],
+    gitUrl: "https://github.com/shaileshsiingh/StepForm",
+    previewUrl: "https://step-form-phi.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Music Streaming Application",
+    description: "Used Reactjs, Redux, Firebase Authentication, LazyLoading, Routing, Playback Controls and more to build this.",
+    image: "/images/project-7.png",
+    tag: ["All", "React.Js"],
+    gitUrl: "https://github.com/shaileshsiingh/music-app",
+    previewUrl: "music-app-nu-lilac.vercel.app",
+  },
+  {
+    id: 8,
+    title: "Live Weather Application",
+    description: "Used HTML, CSS and Javascript to build this which shows realtime details, conditions, and graph of different times.",
+    image: "/images/project-8.png",
+    tag: ["All", "Vanilla JS"],
+    gitUrl: "https://github.com/shaileshsiingh/weatherapp",
+    previewUrl: "weatherappfrontendhomellc.netlify.app",
+  },
 ];
 
 const ProjectsSection = () => {
