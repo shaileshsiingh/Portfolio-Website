@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "React Portfolio Website",
     description: "My Portfolio app build with Nextjs, TailwindCSS, HeroIcons, and more.",
-    image: "/images/project-0.png",
+    image: "/images/project-1.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
     previewUrl: "/",
@@ -18,7 +18,7 @@ const projectsData = [
     id: 2,
     title: " Movie Website",
     description: "Created this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, filter and filter",
-    image: "/images/project-1.png",
+    image: "/images/project-0.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Movie-Fav-",
     previewUrl: "https://movie-fav.vercel.app/",
@@ -30,7 +30,7 @@ const projectsData = [
     image: "/images/project-2.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/WatchList",
-    previewUrl: "watch-list-cyan.vercel.app/",
+    previewUrl: "https://watch-list-cyan.vercel.app/",
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ const projectsData = [
     image: "/images/project-4.png",
     tag: ["All", "Vanilla JS"],
     gitUrl: "https://github.com/shaileshsiingh/Full-fledged-Trading-Website",
-    previewUrl: "transcendent-beignet-fd7293.netlify.app",
+    previewUrl: "https://transcendent-beignet-fd7293.netlify.app",
   },
  
   {
@@ -78,7 +78,7 @@ const projectsData = [
     image: "/images/project-7.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/music-app",
-    previewUrl: "music-app-nu-lilac.vercel.app",
+    previewUrl: "https://music-app-nu-lilac.vercel.app",
   },
   {
     id: 8,
@@ -87,7 +87,7 @@ const projectsData = [
     image: "/images/project-8.png",
     tag: ["All", "Vanilla JS"],
     gitUrl: "https://github.com/shaileshsiingh/weatherapp",
-    previewUrl: "weatherappfrontendhomellc.netlify.app",
+    previewUrl: "https://weatherappfrontendhomellc.netlify.app",
   },
 ];
 
