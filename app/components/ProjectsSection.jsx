@@ -16,12 +16,12 @@ const projectsData = [
   },
   {
     id: 2,
-    title: " Movie/IMDB Clone Website",
+    title: " Movie Website",
     description: "Created this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools.",
     image: "/images/project-1.png",
     tag: ["All", "React.Js"],
-    gitUrl: "https://github.com/shaileshsiingh/IMDB-clone",
-    previewUrl: "https://singular-mandazi-5c06b9.netlify.app/",
+    gitUrl: "https://github.com/shaileshsiingh/PopularMovies",
+    previewUrl: "https://earnest-gaufre-1298c4.netlify.app/",
   },
   {
     id: 3,
