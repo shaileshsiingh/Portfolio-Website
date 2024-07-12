@@ -8,7 +8,7 @@ const projectsData = [
   {
     id: 1,
     title: "React Portfolio Website",
-    description: "My Portfolio app build with Nextjs, TailwindCSS, HeroIcons, and more.",
+    description: "My Portfolio app developed with Nextjs, Reactjs, TailwindCSS, HeroIcons, and more.",
     image: "/images/project-1.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: " Movie Website",
-    description: "Created this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, filter and filter",
+    description: "Developed this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, filter and filter",
     image: "/images/project-0.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Movie-Fav-",
@@ -26,7 +26,7 @@ const projectsData = [
   {
     id: 3,
     title: "WatchList Application",
-    description: "Build this Movie WatchList where user can add to the watchlist page which will also reflect in the sidebar, Added Auhentication with Firebase and Redux.",
+    description: "Developed this Movie WatchList where user can add to the watchlist page which will also reflect in the sidebar, Added Auhentication with Firebase and Redux.",
     image: "/images/project-2.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/WatchList",
@@ -64,7 +64,7 @@ const projectsData = [
  
   {
     id: 7,
-    title: "Apple Homepage Clone",
+    title: "Apple Homepage",
     description: "Developed Apple Clone which is responsive for all the devices as a frontend challange.",
     image: "/images/project-3.png",
     tag: ["All", "Vanilla JS"],
