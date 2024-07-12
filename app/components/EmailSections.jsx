@@ -81,7 +81,7 @@ const EmailSection = () => {
           <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
             <Image src={LeetcodeIcon} alt="Leetcode Icon" />
           </a>
-          <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.geeksforgeeks.org/user/shaileshsiingh/" target="_blank" rel="noopener noreferrer">
             <Image src={GeeksforgeeksIcon} alt="GFG Icon" />
           </a>
           <a href="https://wa.me/7987555461" target="_blank" rel="noopener noreferrer">
