@@ -47,7 +47,7 @@ phase</li>
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Web Development from Sharpener Institute Bootcamp</li>
+        <li>Frontend Development with DSA from Sharpener Institute Bootcamp</li>
         <li>Bcom(P) from Shaheed Bhagat Singh College, University of Delhi</li>
       </ul>
     ),
