@@ -17,7 +17,7 @@ const projectsData = [
   {
     id: 2,
     title: " Movie Website",
-    description: "Developed this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, filter and filter",
+    description: "Developed this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, search and filter",
     image: "/images/project-0.png",
     tag: ["All", "React.Js"],
     gitUrl: "https://github.com/shaileshsiingh/Movie-Fav-",

@@ -10,15 +10,15 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>React.js</li>
-        <li>Javascript</li>
+        <li>Javascript/ES6</li>
         <li>DSA</li>
 
         <li>HTML/CSS</li>
         <li>Redux</li>
         <li>Firebase</li>
         <li>Next.js</li>
-        <li>DSA</li>
-        <li>TailwindCSS</li>
+        <li>Rest API</li>
+        <li>TailwindCSS/Bootstrap</li>
       </ul>
     ),
   },

@@ -1,29 +1,29 @@
-
-
 "use client";
 // Import necessary modules and components
 import { useState } from 'react';
-import { Resend } from 'resend';
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import LeetcodeIcon from "../../public/leetcode-icon.png";
 import GeeksforgeeksIcon from "../../public/geeksforgeeks-icon.svg";
 import WhatsAppIcon from "../../public/whatsapp-icon.svg";
 import Image from "next/image";
+import './EmailSections.css'
 
 const EmailSection = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSending(true);
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-  console.log(data)
+    console.log(data);
     const endpoint = "/api/send";
-    console.log(endpoint)
+    console.log(endpoint);
 
     try {
       const response = await fetch(endpoint, {
@@ -33,27 +33,25 @@ const EmailSection = () => {
         },
         body: JSON.stringify(data),
       });
-  
+
       if (!response.ok) {
         throw new Error(`Failed to send email: ${response.statusText}`);
       }
-  
-      const resData = await response.json();
-      console.log(resData)
 
-  
+      const resData = await response.json();
+      console.log(resData);
+
       if (response.status === 200) {
         console.log("Message sent.");
         setEmailSubmitted(true);
       }
     } catch (error) {
       console.error("Error sending email:", error.message);
-      // Handle the error, show a user-friendly message, or log it as needed.
       setEmailSubmitted(false);
+    } finally {
+      setIsSending(false);
     }
   };
-  
-
 
   return (
     <section
@@ -66,25 +64,54 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <a href="https://github.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-            <Image src={GithubIcon} alt="Github Icon" />
+          <a
+            href="https://github.com/shaileshsiingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tooltip"
+            data-tooltip="GitHub"
+          >
+            <Image src={GithubIcon} alt="GitHub Icon" />
           </a>
-          <a href="https://linkedin.com/in/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          <a
+            href="https://linkedin.com/in/shaileshsiingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tooltip"
+            data-tooltip="LinkedIn"
+          >
+            <Image src={LinkedinIcon} alt="LinkedIn Icon" />
           </a>
-          <a href="https://leetcode.com/shaileshsiingh" target="_blank" rel="noopener noreferrer">
-            <Image src={LeetcodeIcon} alt="Leetcode Icon" />
+          <a
+            href="https://leetcode.com/shaileshsiingh"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tooltip"
+            data-tooltip="LeetCode"
+          >
+            <Image src={LeetcodeIcon} alt="LeetCode Icon" />
           </a>
-          <a href="https://www.geeksforgeeks.org/user/shaileshsiingh/" target="_blank" rel="noopener noreferrer">
-            <Image src={GeeksforgeeksIcon} alt="GFG Icon" />
+          <a
+            href="https://www.geeksforgeeks.org/user/shaileshsiingh/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tooltip"
+            data-tooltip="GeeksforGeeks"
+          >
+            <Image src={GeeksforgeeksIcon} alt="GeeksforGeeks Icon" />
           </a>
-          <a href="https://wa.me/7987555461" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://wa.me/7987555461"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="tooltip"
+            data-tooltip="WhatsApp"
+          >
             <Image src={WhatsAppIcon} alt="WhatsApp Icon" />
           </a>
         </div>
@@ -146,7 +173,7 @@ const EmailSection = () => {
               type="submit"
               className="bg-primary-500 hover:bg-primary-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
             >
-              Send Message
+              {isSending ? "Sending..." : "Send Message"}
             </button>
           </form>
         )}
