@@ -31,34 +31,23 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <h1 className="text-lg">Software Engineer</h1>
-        <p>YuppTV, Hyderabad(From 12th August,2024 to Present)</p>
-        <li>Working on OTT based Projects, and Turito(EDU-Tech) using Reactjs, Nextjs, TailwindCSS, Storyblok(CMS), and more.
-</li>
-<li>Handling Student Site and added several landing pages, and integrated the Payment Gateway, and AI Prompts and more for Turito.
-</li>
-<li>Collaborated with the team to develop and maintain the website, and added new features and improved the overall user experience.
-phase</li>
-
+        <div className="mb-6">
+          <h1 className="text-lg font-bold">Software Engineer</h1>
+          <p className="mb-2 italic">YuppTV, Hyderabad (From 12th August, 2024 to Present)</p>
+          <li>Working on OTT based Projects, and Turito(EDU-Tech) using Reactjs, Nextjs, TailwindCSS, Storyblok(CMS), and more.</li>
+          <li>Handling Student Site and added several landing pages, and integrated the Payment Gateway, and AI Prompts and more for Turito.</li>
+          <li>Collaborated with the team to develop and maintain the website, and added new features and improved the overall user experience.</li>
+        </div>
+        
+        <div className="mt-4">
+          <h1 className="text-lg font-bold">Frontend Developer</h1>
+          <p className="mb-2 italic">Champions Academy, Pune (From 4th March, 2022 to 30th June, 2024)</p>
+          <li>Successfully implemented a data-driven approach to optimize student-side dashboard and website functionalities.</li>
+          <li>Increased web traffic and content engagement by 30%. Skilled in troubleshooting and debugging tasks, leading to improved overall performance by 30%.</li>
+          <li>Provided essential support to the team during the development phase.</li>
+        </div>
       </ul>
     ),
-    content: (
-      <ul className="list-disc pl-2">
-        <h1 className="text-lg">Frontend Developer</h1>
-        <p>Champions Academy, Pune(From 4th March,2022 to 30th June,2024)</p>
-        <li>Successfully implemented a data-driven approach to optimize
-student-side dashboard and website functionalities
-</li>
-<li>Increased web traffic and content engagement by 30%
-Skilled in troubleshooting and debugging tasks, leading to improved
-overall performance by 30%
-</li>
-<li>Provided essential support to the team during the development
-phase</li>
-
-      </ul>
-    ),
-   
   },
   {
     title: "Education",
