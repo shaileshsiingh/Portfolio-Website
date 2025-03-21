@@ -9,22 +9,39 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
+        <li>Next.js</li>
         <li>React.js</li>
         <li>Javascript/ES6</li>
         <li>DSA</li>
-
+        <li>Storyblok(CMS)</li>
+        <li>Rest API</li>
+        <li>Git</li>
         <li>HTML/CSS</li>
         <li>Redux</li>
         <li>Firebase</li>
-        <li>Next.js</li>
-        <li>Rest API</li>
         <li>TailwindCSS/Bootstrap</li>
+        <li>SEO Optimization</li>
+        <li>Responsive Design</li>
+        <li>Typescript</li>
       </ul>
     ),
   },
   {
     title: "Experience",
     id: "experience",
+    content: (
+      <ul className="list-disc pl-2">
+        <h1 className="text-lg">Software Engineer</h1>
+        <p>YuppTV, Hyderabad(From 12th August,2024 to Present)</p>
+        <li>Working on OTT based Projects, and Turito(EDU-Tech) using Reactjs, Nextjs, TailwindCSS, Storyblok(CMS), and more.
+</li>
+<li>Handling Student Site and added several landing pages, and integrated the Payment Gateway, and AI Prompts and more for Turito.
+</li>
+<li>Collaborated with the team to develop and maintain the website, and added new features and improved the overall user experience.
+phase</li>
+
+      </ul>
+    ),
     content: (
       <ul className="list-disc pl-2">
         <h1 className="text-lg">Frontend Developer</h1>
@@ -41,6 +58,7 @@ phase</li>
 
       </ul>
     ),
+   
   },
   {
     title: "Education",

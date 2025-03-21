@@ -7,6 +7,24 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Turito Main Website",
+    description: "Working on the main website of Turito, handling student sites, recently integrated AI Prompts and Payment Gateway.",
+    image: "/images/project-9.png",
+    tag: ["All", "React.Js"],
+    gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
+    previewUrl: "https://test.turito.com/ai-tutor-page",
+  },
+  {
+    id:2,
+    title: "Tangerine Luxury Ecommerce",
+    description: "Freelance Project, working on the Tangerine Luxury Ecommerce website, as a sole Frontend Developer using Reactjs, TailwindCSS, and more.",
+    image: "/images/project-10.png",
+    tag: ["All", "React.Js"],
+    gitUrl: "https://github.com/shaileshsiingh/Portfolio-Website",
+    previewUrl: "https://tang-cloth.vercel.app/",
+  },
+  {
+    id: 3,
     title: "React Portfolio Website",
     description: "My Portfolio app developed with Nextjs, Reactjs, TailwindCSS, HeroIcons, and more.",
     image: "/images/project-1.png",
@@ -15,7 +33,7 @@ const projectsData = [
     previewUrl: "/",
   },
   {
-    id: 2,
+    id: 4,
     title: " Movie Website",
     description: "Developed this Project which shows the list of popular movies from Api with movie details and also added Pagination to show more movies. Used Reactjs, tailwind css and other tools. Favourite page is to sort, search and filter",
     image: "/images/project-0.png",
@@ -24,7 +42,7 @@ const projectsData = [
     previewUrl: "https://movie-fav.vercel.app/",
   },
   {
-    id: 3,
+    id: 5,
     title: "WatchList Application",
     description: "Developed this Movie WatchList where user can add to the watchlist page which will also reflect in the sidebar, Added Auhentication with Firebase and Redux.",
     image: "/images/project-2.png",
@@ -33,7 +51,7 @@ const projectsData = [
     previewUrl: "https://watch-list-cyan.vercel.app/",
   },
   {
-    id: 4,
+    id: 6,
     title: "Step Form Application",
     description: "Used Reactjs and TailwindCSS to build this smooth Step Form which is Responsive.",
     image: "/images/project-6.jpg",
@@ -43,7 +61,7 @@ const projectsData = [
   },
  
   {
-    id: 5,
+    id: 7,
     title: "Trading Course Application",
     description: "Used Vanilla JS to create this webpage for one of my clients.",
     image: "/images/project-4.png",
@@ -53,7 +71,7 @@ const projectsData = [
   },
  
   {
-    id: 6,
+    id: 8,
     title: "MailBox Application",
     description: "User can send and receive mails with user specific login. Used Redux toolkit.",
     image: "/images/project-5.png",
@@ -63,7 +81,7 @@ const projectsData = [
   },
  
   {
-    id: 7,
+    id: 9,
     title: "Apple Homepage",
     description: "Developed Apple Clone which is responsive for all the devices as a frontend challange.",
     image: "/images/project-3.png",
@@ -72,7 +90,7 @@ const projectsData = [
     previewUrl: "https://glittering-eclair-aad20d.netlify.app/",
   },
   {
-    id: 8,
+    id: 10,
     title: "Music Streaming Application",
     description: "Used Reactjs, Redux, Firebase Authentication, LazyLoading, Routing, Playback Controls and more to build this.",
     image: "/images/project-7.png",
@@ -81,7 +99,7 @@ const projectsData = [
     previewUrl: "https://music-app-nu-lilac.vercel.app",
   },
   {
-    id: 8,
+    id: 11,
     title: "Live Weather Application",
     description: "Used HTML, CSS and Javascript to build this which shows realtime details, conditions, and graph of different times.",
     image: "/images/project-8.png",

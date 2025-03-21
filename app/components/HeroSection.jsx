@@ -27,7 +27,7 @@ const HeroSection = () => {
                 1000,
                 "a Frontend Developer",
                 1000,
-                "a React.Js Developer",
+                "a Nextjs/React.Js Developer",
                 1000,
                 "a UI/UX Designer",
                 1000,
@@ -48,7 +48,7 @@ const HeroSection = () => {
               Hire Me
             </Link>
             <a
-              href="https://drive.google.com/file/d/1B0sA7wIfduFMIm65HKxhkKOaC_ovoYsK/view?usp=sharing"
+              href="https://drive.google.com/file/d/1_70x6q0hF-vRj0VexkBiSxZXsL0JM02-/view?usp=sharing"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3"
               target="_blank" rel="noopener noreferrer"
             >
